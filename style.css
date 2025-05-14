@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  width: 100%;
+  min-height: 100vh;
+}
+.top {
+  width: 100%;
+  min-height: 60vh;
+  background-image: url('https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?cs=srgb&dl=daylight-environment-forest-459225.jpg&fm=jpg');
+  background-size: cover;
+  background-position: center;
+}
+.top .overlay {
+  position: relative;
+  width: 100%;
+  min-height: inherit;
+  background-color: rgba(0, 0, 0, 0.307);
+}
+.text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  padding: 0 10vh;
+  color: white;
+  bottom: 5%;
+  flex-wrap: wrap;
+}
+.images {
+  display: flex;
+  gap: 10px;
+}
+.images img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.rtext {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.rtext p {
+  font-size: 12px;
+  margin: 4px 0;
+}
+.icons {
+  margin-top: 10px;
+}
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 40vh;
+}
+.b1 {
+  width: 30%;
+  min-height: inherit;
+  background-image: url('http://www.tomaszworek.com/galleries/alpy_berchtesgaden/IMGP3173a.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.b1 h1 {
+  text-align: center;
+  padding: 30px;
+}
+.b1 p {
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+.b2 {
+  width: 30%;
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.b2 .up {
+  width: 100%;
+  min-height: 20vh;
+  background-image: url('https://th.bing.com/th/id/OIP.Rlyn7scOGnAbhM7ym1JrggHaDy?cb=iwp2&w=940&h=480&rs=1&pid=ImgDetMain');
+  background-size: cover;
+  background-position: center;
+}
+.b2 .up h1 {
+  text-align: center;
+  padding: 30px;
+}
+.b2 .up p {
+  color: white;
+  text-align: center;
+  padding: 15%;
+}
+.b2 .down {
+  width: 100%;
+  min-height: 20vh;
+  background-image: url('https://th.bing.com/th/id/OIP.8-TzTLFuWg2cfWKgKn7uoAHaEK?cb=iwp2&w=2048&h=1152&rs=1&pid=ImgDetMain');
+  background-size: cover;
+  background-position: center;
+}
+.b2 .down .overlay {
+  position: relative;
+  width: 100%;
+  min-height: 20vh;
+  background-color: rgba(255, 255, 255, 0.308);
+}
+.b3 {
+  width: 40%;
+  min-height: inherit;
+  background-image: url('https://p0.pikist.com/photos/466/910/konigssee-bavaria-berchtesgaden-alpine-mountains-nature-water-vacations-landscape.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.b3 .overlay {
+  position: relative;
+  margin-left: 50%;
+  width: 50%;
+  height: 100%;
+  padding: 4vw 3vh;
+}
+.b3 .overlay p {
+  padding: 1.2vh;
+}
+@media(max-width: 700px) {
+  .rtext {
+    flex-direction: column;
+  }
+  .b3 .overlay {
+    width: 100%;
+    margin-left: initial;
+  }
+}
+@media(max-width: 500px) {
+  .text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .images img {
+    width: 100px;
+    height: 70px;
+  }
+  .rtext {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .rtext p {
+    margin: 10px;
+  }
+  .icons {
+    margin-top: 10px;
+  }
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .b1, .b2, .b3 {
+    width: 100%;
+    min-height: 30vh;
+    background-position: center;
+  }
+}
